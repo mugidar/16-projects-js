@@ -1,0 +1,35 @@
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    background-color: #555;
+}
+
+span {
+    opacity: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("https://cdn4.iconfinder.com/data/icons/essentials-74/24/028_-_Heart-256.png");
+    background-size: cover;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 3s linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate (-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -500%);
+        opacity: 0;
+        filter: hue-rotate(360deg);
+    }
+}
