@@ -1,0 +1,49 @@
+body {
+    background-color: #555;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgba(240, 248, 255, 0.533);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.popup {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(89, 89, 89, 0.514);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+#close {
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+    right: 20px;
+    top: 10px;
+    position: absolute;
+}
