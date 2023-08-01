@@ -1,0 +1,30 @@
+body {
+    margin:0;
+    padding: 0;
+}
+h1 {
+    user-select: none;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h1::after {
+    content: "|";
+    animation: typing 2s alternate;
+    
+}
+
+@keyframes typing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.text {
+    padding: 20px;
+   
+}
